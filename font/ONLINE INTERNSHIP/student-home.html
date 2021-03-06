@@ -1,0 +1,107 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</head>
+
+<body class="bodys">
+    <div class="tabs">
+        <input type="radio" name="tabs" id="tabone" checked="checked">
+        <label for="tabone">Apply Internship</label>
+        <div class="tab">
+            <h1>Apply Internship</h1>
+            <div class="form-group">
+                <label>Project Title</label>
+                <select id="1" class="form-control" id="exampleInputPassword1">
+				<option>Select Title</select>
+				</select>
+            </div>
+            <div class="form-group">
+                <label>Desciption</label>
+                <input class="form-control" id="2" disabled>
+            </div>
+            <div class="form-group">
+                <label>Front end</label>
+                <input class="form-control" id="3" disabled>
+            </div>
+			<div class="form-group">
+                <label>Back end</label>
+                <input class="form-control" id="4" disabled>
+            </div>
+			<div class="form-group">
+                <label>Modules</label>
+                <Textarea class="form-control" id="5" disabled ></Textarea>	
+            </div>
+			<button id="apply_intern" type="submit" class="btn btn-primary">Apply Intern</button>
+        </div>
+
+        <input type="radio" name="tabs" id="tabtwo">
+        <label for="tabtwo">Code upload</label>
+         <div class="tab">
+            <h1>View Applicants</h1>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Project Desciption</th>
+						<th scope="col">Modules</th>
+                        <th scope="col">Upload Code</th>
+                        
+                       
+                        
+                    </tr>
+                </thead>
+                <tbody id="view_applicant">
+                    <tr>
+                      
+                     
+                        
+                    </tr>
+
+                </tbody>
+            </table>
+            
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalCenterTitle">Code upload</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <textarea id="code" style="width: 100%;height: 400px;"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button id="upload_code" type="button" class="btn btn-primary">Upload</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+       
+
+        <input type="radio" name="tabs" id="tabfive">
+        <label for="tabfive">Logout</label>
+        <div class="tab">
+            <h1>Logout</h1>
+           
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="./student-home.js">
+
+</script>
+
+</html>

@@ -1,0 +1,123 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</head>
+
+<body class="bodys">
+    <div class="tabs">
+        <input type="radio" name="tabs" id="tabone" checked="checked">
+        <label for="tabone">Project Requirement</label>
+        <div class="tab">
+            <h1>Project Requirement</h1>
+            <div class="form-group">
+                <label>Project Title</label>
+                <input class="form-control" id="1">
+            </div>
+            <div class="form-group">
+                <label>Desciption</label>
+                <input class="form-control" id="2">
+            </div>
+            <div class="form-group">
+                <label>Front end</label>
+                <input class="form-control" id="3">
+            </div>
+			<div class="form-group">
+                <label>Back end</label>
+                <input class="form-control" id="4">
+            </div>
+			<div class="form-group">
+                <label>Modules</label>
+                <Textarea class="form-control" id="5" ></Textarea>	
+            </div>
+			<button id="requirement_register" type="submit" class="btn btn-primary">Add Project Requirement</button>
+        </div>
+
+        <input type="radio" name="tabs" id="tabtwo">
+        <label for="tabtwo">View Applicants</label>
+         <div class="tab">
+            <h1>View Applicants</h1>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Applicant Name</th>
+                        <th scope="col">Qualification</th>
+                        <th scope="col">Mobile Number</th>
+                        <th scope="col">Front End Skills</th>
+                        <th scope="col">Bank end skills</th>
+                        <th scope="col">Programming languages</th>
+                        <th scope="col">Database Skills</th>
+                        <th scope="col">Designation</th>
+                        
+                    </tr>
+                </thead>
+                <tbody id="applicant_body">
+                    
+
+                </tbody>
+            </table>
+        </div>
+
+        <input type="radio" name="tabs" id="tabthree">
+        <label for="tabthree">Check Code</label>
+        <div class="tab">
+            <h1>Code check</h1>
+             <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Applicant Name</th>
+                        <th scope="col">Project Name</th>
+                        <th scope="col">View Code</th>
+                        <th scope="col">Date & Time</th>
+                       
+                        
+                    </tr>
+                </thead>
+                <tbody id="checkcode">
+                   
+
+                </tbody>
+            </table>
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalCenterTitle">Code upload</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <textarea id="code" style="width: 100%;height: 400px;"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
+		</div>
+        
+
+        <input type="radio" name="tabs" id="tabfive">
+        <label for="tabfive">Logout</label>
+        <div class="tab">
+            <h1>Logout</h1>
+           
+        </div>
+    </div>
+</body>
+<script src="./admin-home.js">
+
+</script>
+
+</html>

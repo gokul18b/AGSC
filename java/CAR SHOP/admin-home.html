@@ -1,0 +1,99 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</head>
+
+<body class="bodys">
+    <div class="tabs">
+        <input type="radio" name="tabs" id="toggle-apples" checked="checked" />
+        <label for="toggle-apples">
+            <span class="text-title">Car Registration</span>
+        </label>
+        <input type="radio" name="tabs" id="toggle-bananas" />
+        <label for="toggle-bananas">
+            <span class="text-title">Booking History</span>
+        </label>
+        <input type="radio" name="tabs" id="toggle-cherries" />
+        <label for="toggle-cherries">
+            <span class="text-title">Car Details</span>
+        </label>
+        <input type="radio" name="tabs" id="toggle-oranges" />
+        <label onclick="logout()" for="toggle-oranges">
+            <span class="text-title">Logout</span>
+        </label>
+        <div class="tab tab-apples">
+            <div class="form-group">
+                <label>Branch Name</label>
+                <input class="form-control" id="1">
+            </div>
+            <div class="form-group">
+                <label>Car Name</label>
+                <input class="form-control" id="2">
+            </div>
+            <div class="form-group">
+                <label>Model</label>
+                <input class="form-control" id="3">
+            </div>
+            <div class="form-group">
+                <label>Engine Type</label>
+                <input class="form-control" id="4">
+            </div>
+            <div class="form-group">
+                <label>Width</label>
+                <input class="form-control" id="5">
+            </div>
+            <div class="form-group">
+                <label>Height</label>
+                <input class="form-control" id="6">
+            </div>
+            <div class="form-group">
+                <label>Price</label>
+                <input class="form-control" id="7">
+            </div>
+            <div class="form-group">
+                <label>Publiched Year</label>
+                <input class="form-control" id="8">
+            </div>
+            <button id="register1" type="submit" class="btn btn-primary">Car Registration</button>
+        </div>
+        <div class="tab tab-bananas">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Customer Name</th>
+                        <th scope="col">Contact Number</th>
+                        <th scope="col">Car Name</th>
+                        <th scope="col">Model</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Expected Price</th>
+                        <th scope="col">Suggestion</th>
+                    </tr>
+                </thead>
+                <tbody id="body1">
+                    
+
+                </tbody>
+            </table>
+        </div>
+        <div class="tab tab-cherries" >
+            <div class="row" id="body2">
+			</div>
+        </div>
+        
+    </div>
+</body>
+<script src="./admin-home.js">
+
+
+</script>
+
+
+</html>
